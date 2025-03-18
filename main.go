@@ -15,7 +15,6 @@ func main() {
 
 	router := gin.Default()
 	group := router.Group("/user")
-
 	routes.InitUserRoutes(group)
 
 	if err := router.Run(":8080"); err != nil {
