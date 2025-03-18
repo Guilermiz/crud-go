@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func InitRoutes(routes *gin.RouterGroup) {
+func InitUserRoutes(routes *gin.RouterGroup) {
 
 	routes.GET("/getUserById/:userId", controller.FindUserById)
 	routes.GET("/getUserByEmail/:userEmail", controller.FindUserByEmail)
