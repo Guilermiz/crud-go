@@ -7,7 +7,7 @@ import (
 
 func CreateUser(context *gin.Context) {
 
-	err := rest_err.NewBadRequestError("Bad Request", nil)
+	err := rest_err.NewUnprocessableEntityError("Erro na requisicao")
 	context.JSON(err.Code, err)
 
 }
